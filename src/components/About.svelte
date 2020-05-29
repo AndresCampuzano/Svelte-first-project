@@ -1,13 +1,14 @@
 <script>
   let someText = `Frontend Developer from Home`;
   let count = 0;
-  let styles = { darkmode: false }
+  let styles = { darkmode: false };
+  let testStyles = false;
 
   function handleClick() {
     count += 1;
   }
 
-  function toggle() {
+  function toggleClick() {
     styles.darkmode = !styles.darkmode;
     window.document.body.classList.toggle("dark-mode");
   }
@@ -35,5 +36,5 @@
   {/if}
 
   <button on:click={handleClick} >💊Click me {count === 0 ? '' : count}</button>
-  <button on:click={toggle}>DarkMode {styles.darkmode ? '🌘' : '🌞'}</button>
+  <button on:click={toggleClick}>DarkMode {styles.darkmode ? '🌘' : '🌞'}</button>
 </div>
