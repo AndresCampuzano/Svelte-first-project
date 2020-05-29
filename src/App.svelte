@@ -18,13 +18,19 @@
 
 <style>
 	:global(body) {
-		/* background-color: #f2eee2; */
-		background-color: #343739;
+		background-color: #f2eee2;
+		/* background-color: #343739; */
 		color: #0084f6;
 	}
 
 	:global(:root) {
-		--theme-color: #a75ca7;
+		--theme-color-light: #a75ca7;
+		--theme-color-dark: #bfc2c7;
+	}
+
+	:global(body.dark-mode) {
+		background-color: #1d3040;
+		color: var(--theme-color-dark);
 	}
 
 	main {
@@ -32,6 +38,7 @@
 		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
+		font-weight: bold;
 	}
 
 	main img {
