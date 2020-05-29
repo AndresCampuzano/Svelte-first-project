@@ -1,5 +1,5 @@
 <script>
-  export let anotherText;
+  export let anotherText = "Lorem ipsum";
 </script>
 
 <div class="Text">

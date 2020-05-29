@@ -20,5 +20,5 @@
 
 <div class="About">
   <p>{someText}</p>
-  <button on:click={handleClick} >➕Click me {count === 0 ? '' : count}</button>
+  <button on:click={handleClick} >💊Click me {count === 0 ? '' : count}</button>
 </div>
